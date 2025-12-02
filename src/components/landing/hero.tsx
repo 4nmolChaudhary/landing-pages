@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { Button } from '@/components/form/button'
+import Chatbot from '@/components/chat/chatbot'
 
 const Hero = () => {
   const items = ['Software Development', 'AI & ML', 'Generative AI', 'Web & Mobile App Development', 'Data Services', 'DevSecOps', 'Offshore Outsourcing', 'IT Staff Augmentation']
@@ -55,12 +56,16 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className='col-span-5 bg-accent overflow-hidden relative'>
-            <Image className='xl:scale-100 md:scale-175' priority unoptimized src='/hero.gif' width={1000} height={1000} alt='my gif' />
+          <div className='col-span-5 bg-accent relative'>
+            <div className='w-full h-full overflow-hidden absolute top-0 left-0'>
+              <Image className='xl:scale-100 md:scale-175' priority unoptimized src='/hero.gif' width={1000} height={1000} alt='my gif' />
+            </div>
             <div className='w-full h-full absolute z-10 right-0 top-0 grid gap-2 grid-cols-5 grid-rows-5'>
               <div className='h-full w-full bg-background border'></div>
-              <div className='h-full w-full bg-background border col-start-5 row-start-5'></div>
               <div className='h-full w-full bg-background border row-start-5'></div>
+              <div className='h-full w-full bg-background border col-start-5 row-start-5 flex items-center justify-center'>
+                <Chatbot />
+              </div>
             </div>
           </div>
         </div>
