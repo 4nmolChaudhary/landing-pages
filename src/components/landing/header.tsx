@@ -36,7 +36,7 @@ const Header = () => {
           </a>
         </div>
       </div>
-      <div className='relative flex h-12 w-full before:border-y-[var(--border)] before:absolute before:-left-[100vw] before:h-12 before:w-[200vw] before:bg-repeat before:bg-[url(https://framerusercontent.com/images/zkZcqLYKrbf3IcoLGmkQF4odXvY.svg)] before:bg-size-[16px_auto] before:bg-opacity-5'></div>
+      <div className='header-bg-01 relative flex h-12 w-full before:content-[""] before:border-y-[var(--border)] before:absolute before:-left-[100vw] before:h-12 before:w-[200vw] before:bg-repeat before:bg-[url(https://framerusercontent.com/images/zkZcqLYKrbf3IcoLGmkQF4odXvY.svg)] before:bg-size-[16px_auto] before:bg-opacity-5'></div>
     </div>
   )
 }

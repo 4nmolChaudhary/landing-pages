@@ -130,4 +130,7 @@
 .toaster li {
   border-radius: 4px !important;
 }
+.header-bg-01::before {
+  background-size: 16px auto;
+}
 
